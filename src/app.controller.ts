@@ -6,4 +6,9 @@ export class AppController {
     getHello(): string {
         return 'Bond Yield Calculator API is running!';
     }
+
+    @Get('ping')
+    ping(): string {
+        return 'pong';
+    }
 }
